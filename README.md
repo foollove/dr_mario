@@ -2,8 +2,8 @@
 
 Retro game **Dr. Mario** developed with javascript
 
+![Language](https://img.shields.io/badge/language-javascript-yellow)
 ![GitHub license](https://img.shields.io/github/license/ValentinLab/dr_mario)
-![GitHub license](https://img.shields.io/badge/language-javascript-yellow)
 
 ## About
 
@@ -12,7 +12,7 @@ It's an adaptation of the reknown **Dr. Mario** game, released in 1990, with Jav
 
 ## How to play
 
-__Work in progress__
+*Work in progress*
 
 ## Sources
 
