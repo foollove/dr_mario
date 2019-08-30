@@ -3,10 +3,10 @@
 // --------------------------------------------------
 
 /** Context pour l'affichage du ju */
-var context = null;
+let context = null;
 
 /** Date de dernier raffraichissement de la boucle de jeu */
-var lastUpdate = Date.now();
+let lastUpdate = Date.now();
 
 // --------------------------------------------------
 // Fonctions de jeu
@@ -32,7 +32,7 @@ function init() {
  */
 function gameLoop() {
     // Calcul du delta de temps entre deux boucles
-    var delta = Date.now() - lastUpdate;
+    let delta = Date.now() - lastUpdate;
     lastUpdate = Date.now();
 
     // Mise à jour de l'état du jeu
