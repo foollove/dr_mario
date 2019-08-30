@@ -9,7 +9,7 @@ let context = null;
 let lastUpdate = Date.now();
 
 // --------------------------------------------------
-// Fonctions de jeu
+// Fonctions principales de jeu
 // --------------------------------------------------
 
 /**
@@ -58,5 +58,18 @@ function update(delta) {
  * Affichage des éléments de jeu
  */
 function render() {
+    // ---------- Nettoyage du canvas ----------
+    context.clearRect(0, 0, context.width, context.height);
 
+    // ---------- Dessin du fond ----------
+    // Fond noir
+    context.fillStyle = 'black';
+    context.fillRect(0, 0, context.width, context.height);
+    // Damier violet
+    context.fillStyle = 'purple';
+    for(let i = 0; i < 8; i++) {
+        for(let j = 0; j < 12; j++) {
+            context.fillRect(100*i + 50*(j%2), 50*j, 50, 50);
+        }
+    }
 }
